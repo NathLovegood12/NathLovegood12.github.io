@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color:rgb(219, 13, 13);
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header {
+  background-image: url(img2c.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: rgb(228, 26, 26);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  display: block;
+  font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+  color: rgb(228, 26, 26);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  text-align: center;
+}
+.header-content h1 {
+  font-size: 75px;
+  line-height: 8opx;
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: white;
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+.contact-container {
+  background-color: rgb(255, 215, 139);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: rgb(219, 12, 12);
+}
+
+.contact-container p {
+  font-size: 1em;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.1em;
+}
+
+.contact-item i {
+  color: #d80b0b;
+  font-size: 1.3em;
+}
+
+.contact-item a {
+  color: #e72525;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+.btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #8ace00;
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn-1:hover {
+  background-color: #badd13;
+}
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    background-color: rgb(243, 182, 68);
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header {
+    min-height: 0vh;
+  }
+  .header-content {
+    padding: 100px 30px;
+  }
+  .header-content p{
+    padding: 0%;
+  }
+
+  .apple {
+    padding: 30px;
+
+  }
+  .apple-content h2 {
+    padding: 0%;
+  }
+  .txt-p {
+    padding: 0%;
+  }
+  .apple-group {
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .apple img {
+    display: none;
+  }
+
+  .services {
+    padding: 30px;
+  }
+
+  .services-content p{
+    padding: 0%;
+  }
+  .services-group {
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+  .services-1 {
+    margin-bottom: 0%;
+  }
+}
